@@ -239,6 +239,8 @@ def VGG16_Places365(include_top=True, weights='places',
     elif weights is not None:
         model.load_weights(weights)
 
+    #save this model
+    model.save("vgg16_places_365_MODEL.h5")
     return model
 
 
